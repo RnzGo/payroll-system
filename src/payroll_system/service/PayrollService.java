@@ -1,4 +1,3 @@
-
 package payroll_system.service;
 
 import payroll_system.dao.EmployeeDAO;
@@ -17,8 +16,7 @@ public class PayrollService {
         while(true){
             
             showMainMenu();
-            System.out.print("CHOOSE AN OPTION: ");
-            int choice = scanner.nextInt();
+            int choice = getIntInput("\nCHOOSE AN OPTION: ");
             
             switch(choice){
                 case 1 -> addEmployee();
@@ -49,26 +47,86 @@ public class PayrollService {
         System.out.println("\n ----Add New Employee---- ");
         
         // Get the new Employee's name
-        System.out.println("FULL NAME : ");
+        System.out.print("FULL NAME : ");
         String name = scanner.nextLine();
         
         //Get the new Employee's position
-        System.out.println("POSITION : ");
+        System.out.print("POSITION : ");
         String position = scanner.nextLine();
         
         //Get the new Employee's rate per day
-        System.out.println("DAILY RATE : ");
-        double rate = scanner.nextDouble();
+        double rate = getDoubleInput("RATE PER DAY: ");
         
         //Get the new Employee's Residence Address
-        System.out.println("ADDRESS: ");
+        System.out.print("ADDRESS: ");
         String address = scanner.nextLine();
         
         //Get the contact number of the Employee
-        System.out.println("CONTACT NUMBER: ");
+        System.out.print("CONTACT NUMBER: ");
         String contact = scanner.nextLine();
         
+        Employee employee = new Employee();
         
+        employee.setEmpName(name);
+        employee.setEmpPosition(position);
+        employee.setRatePerDay(rate);
+        employee.setEmpAddress(address);
+        employee.setContactNumber(contact);
+        employee.setEmpStatus("Active");
         
+        boolean success = employeeDAO.addEmployee(employee);
+        System.out.println(success? "Employee successfully added!":"Failed to add employee!");
+        
+    }
+    
+    private void viewAllEmployees(){
+        System.out.println("\n----VIEW ALL EMPLOYEES----");
+        List<Employee> employees = employeeDAO.getAllEmployees();
+        
+        if (employees.isEmpty()){
+            System.out.println("No Employees Found!");
+            return;
+        }
+        
+        System.out.println("\nID || NAME || POSITION || RATE PER DAY || STATUS");
+        System.out.println("------------------------------------------------");
+        for (Employee emp : employees){
+            System.out.printf("\n%d | %s | %s | ₱%.2f | %s\\n",
+                    emp.getEmpId(),
+                    emp.getEmpName(),
+                    emp.getEmpPosition(),
+                    emp.getRatePerDay(),
+                    emp.getEmpStatus());
+        }
+    }
+    
+    private void updateEmployee(){
+        System.out.println("Update feature on work... Please Standby");
+    }
+    
+    private void archiveEmployee(){
+        System.out.println("Archiving an Employee on work... Please Standby");
+    }
+    
+    private int getIntInput(String prompt) {
+        System.out.print(prompt);
+        while (!scanner.hasNextInt()) {
+            System.out.print("Please enter a number: ");
+            scanner.next();
+        }
+        int value = scanner.nextInt();
+        scanner.nextLine();
+        return value;
+    }
+    
+    private double getDoubleInput(String prompt){
+        System.out.print(prompt);
+        while (!scanner.hasNextDouble()){
+            System.out.println("Please Enter A Valid Amount: ");
+            scanner.next();
+        }
+        double value = scanner.nextDouble();
+        scanner.nextLine();
+        return value;
     }
 }
