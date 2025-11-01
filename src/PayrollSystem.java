@@ -1,4 +1,5 @@
-/*import payroll_system.util.DatabaseConnection;
+/*
+import payroll_system.util.DatabaseConnection;
 import java.sql.Connection;
 import java.sql.SQLException;
 
@@ -20,33 +21,6 @@ public class PayrollSystem {
             System.out.println("ERROR: Database connection failed!");
             e.printStackTrace();
         }
-    }
-}
-*/
-/*
-import payroll_system.dao.EmployeeDAO;
-import payroll_system.model.Employee;
-
-public class PayrollSystem {
-    public static void main(String[] args) {
-        EmployeeDAO employeeDAO = new EmployeeDAO();
-        
-        // Test adding employee
-        Employee emp = new Employee();
-        emp.setEmpName("Juan Dela Cruz");
-        emp.setEmpPosition("Software Developer");
-        emp.setRatePerDay(1500.00);
-        emp.setEmpAddress("Manila");
-        emp.setContactNumber("09123456789");
-        
-        boolean success = employeeDAO.addEmployee(emp);
-        System.out.println("Employee added: " + success);
-        
-        // Test retrieving employees
-        System.out.println("\nAll Employees:");
-        employeeDAO.getAllEmployees().forEach(e -> {
-            System.out.println(e.getEmpName() + " - " + e.getEmpPosition());
-        });
     }
 }
 */
