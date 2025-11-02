@@ -29,12 +29,10 @@ public class SalaryCompFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         pnlHeader = new javax.swing.JPanel();
-        pnlTabs = new javax.swing.JPanel();
-        lblTabsTitle_bottom = new javax.swing.JLabel();
-        lblTabsTitle_top = new javax.swing.JLabel();
-        pnlMain = new javax.swing.JPanel();
-        SalaryCompCard = new javax.swing.JPanel();
-        SalaryCompInner = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        pnllSideBar = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -43,42 +41,34 @@ public class SalaryCompFrame extends javax.swing.JFrame {
         setAutoRequestFocus(false);
         setBackground(new java.awt.Color(209, 209, 209));
         setForeground(new java.awt.Color(209, 209, 209));
+        setMinimumSize(new java.awt.Dimension(1024, 768));
         setPreferredSize(new java.awt.Dimension(1440, 1024));
 
         pnlHeader.setBackground(new java.awt.Color(255, 251, 251));
         pnlHeader.setForeground(new java.awt.Color(255, 251, 251));
-        pnlHeader.setMinimumSize(new java.awt.Dimension(1440, 153));
+        pnlHeader.setMinimumSize(new java.awt.Dimension(1200, 110));
         pnlHeader.setPreferredSize(new java.awt.Dimension(1440, 153));
+        pnlHeader.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/payroll_system/554311662_1317130376082826_1071741920614451639_n 1.png"))); // NOI18N
+        pnlHeader.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 130, 150));
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 42)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel2.setText("BARANGAY SAN ROQUE, CAINTA, RIZAL");
+        pnlHeader.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 0, 890, 150));
+
         getContentPane().add(pnlHeader, java.awt.BorderLayout.PAGE_START);
 
-        pnlTabs.setBackground(new java.awt.Color(11, 11, 69));
-        pnlTabs.setPreferredSize(new java.awt.Dimension(290, 871));
-        pnlTabs.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        pnllSideBar.setBackground(new java.awt.Color(11, 11, 69));
+        pnllSideBar.setPreferredSize(new java.awt.Dimension(290, 871));
+        pnllSideBar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblTabsTitle_bottom.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        lblTabsTitle_bottom.setForeground(new java.awt.Color(255, 255, 255));
-        lblTabsTitle_bottom.setText("System");
-        pnlTabs.add(lblTabsTitle_bottom, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 90, 40));
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel3.setText("Payroll Management System");
+        pnllSideBar.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 270, 20));
 
-        lblTabsTitle_top.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        lblTabsTitle_top.setForeground(new java.awt.Color(255, 255, 255));
-        lblTabsTitle_top.setText("Payroll Management");
-        pnlTabs.add(lblTabsTitle_top, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 260, 40));
-
-        getContentPane().add(pnlTabs, java.awt.BorderLayout.LINE_START);
-
-        pnlMain.setBackground(new java.awt.Color(209, 209, 209));
-        pnlMain.setLayout(new java.awt.CardLayout());
-
-        SalaryCompCard.setBackground(new java.awt.Color(209, 209, 209));
-
-        SalaryCompInner.setBackground(new java.awt.Color(250, 249, 246));
-        SalaryCompInner.setPreferredSize(new java.awt.Dimension(700, 400));
-        SalaryCompCard.add(SalaryCompInner);
-
-        pnlMain.add(SalaryCompCard, "card2");
-
-        getContentPane().add(pnlMain, java.awt.BorderLayout.CENTER);
+        getContentPane().add(pnllSideBar, java.awt.BorderLayout.LINE_START);
 
         jMenu1.setText("File");
         jMenuBar1.add(jMenu1);
@@ -128,15 +118,13 @@ public class SalaryCompFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel SalaryCompCard;
-    private javax.swing.JPanel SalaryCompInner;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JLabel lblTabsTitle_bottom;
-    private javax.swing.JLabel lblTabsTitle_top;
     private javax.swing.JPanel pnlHeader;
-    private javax.swing.JPanel pnlMain;
-    private javax.swing.JPanel pnlTabs;
+    private javax.swing.JPanel pnllSideBar;
     // End of variables declaration//GEN-END:variables
 }
