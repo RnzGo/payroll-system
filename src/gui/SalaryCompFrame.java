@@ -34,7 +34,7 @@ public class SalaryCompFrame extends javax.swing.JFrame {
         lblTabsTitle_top = new javax.swing.JLabel();
         pnlMain = new javax.swing.JPanel();
         SalaryCompCard = new javax.swing.JPanel();
-        jPanel1 = new javax.swing.JPanel();
+        SalaryCompInner = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -72,10 +72,9 @@ public class SalaryCompFrame extends javax.swing.JFrame {
 
         SalaryCompCard.setBackground(new java.awt.Color(209, 209, 209));
 
-        jPanel1.setBackground(new java.awt.Color(250, 249, 246));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
-        jPanel1.setPreferredSize(new java.awt.Dimension(700, 400));
-        SalaryCompCard.add(jPanel1);
+        SalaryCompInner.setBackground(new java.awt.Color(250, 249, 246));
+        SalaryCompInner.setPreferredSize(new java.awt.Dimension(700, 400));
+        SalaryCompCard.add(SalaryCompInner);
 
         pnlMain.add(SalaryCompCard, "card2");
 
@@ -130,10 +129,10 @@ public class SalaryCompFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel SalaryCompCard;
+    private javax.swing.JPanel SalaryCompInner;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblTabsTitle_bottom;
     private javax.swing.JLabel lblTabsTitle_top;
     private javax.swing.JPanel pnlHeader;
