@@ -28,32 +28,26 @@ public class SalaryCompFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        HeaderPanel = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        BrgySanRoqueLogo = new javax.swing.JLabel();
+        pnlHeader = new javax.swing.JPanel();
+        pnlTabs = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(209, 209, 209));
+        setForeground(new java.awt.Color(209, 209, 209));
+        setPreferredSize(new java.awt.Dimension(1440, 1024));
 
-        HeaderPanel.setBackground(new java.awt.Color(255, 251, 251));
-        HeaderPanel.setPreferredSize(new java.awt.Dimension(1440, 153));
-        HeaderPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        pnlHeader.setBackground(new java.awt.Color(255, 251, 251));
+        pnlHeader.setForeground(new java.awt.Color(255, 251, 251));
+        pnlHeader.setMinimumSize(new java.awt.Dimension(1440, 153));
+        pnlHeader.setPreferredSize(new java.awt.Dimension(1440, 153));
+        getContentPane().add(pnlHeader, java.awt.BorderLayout.PAGE_START);
 
-        jLabel1.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel1.setFont(new java.awt.Font("Aptos SemiBold", 0, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel1.setText("BARANGAY SAN ROQUE, CAINTA, RIZAL");
-        jLabel1.setPreferredSize(new java.awt.Dimension(845, 60));
-        HeaderPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 60, 850, 40));
-
-        BrgySanRoqueLogo.setIcon(new javax.swing.ImageIcon("C:\\554311662_1317130376082826_1071741920614451639_n 1.png")); // NOI18N
-        BrgySanRoqueLogo.setText("Brgy Logo");
-        HeaderPanel.add(BrgySanRoqueLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 96, 96));
-
-        getContentPane().add(HeaderPanel, java.awt.BorderLayout.NORTH);
+        pnlTabs.setBackground(new java.awt.Color(11, 11, 69));
+        pnlTabs.setPreferredSize(new java.awt.Dimension(290, 871));
+        getContentPane().add(pnlTabs, java.awt.BorderLayout.LINE_START);
 
         jMenu1.setText("File");
         jMenuBar1.add(jMenu1);
@@ -103,11 +97,10 @@ public class SalaryCompFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel BrgySanRoqueLogo;
-    private javax.swing.JPanel HeaderPanel;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JPanel pnlHeader;
+    private javax.swing.JPanel pnlTabs;
     // End of variables declaration//GEN-END:variables
 }
