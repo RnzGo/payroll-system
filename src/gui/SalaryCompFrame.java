@@ -30,11 +30,17 @@ public class SalaryCompFrame extends javax.swing.JFrame {
 
         pnlHeader = new javax.swing.JPanel();
         pnlTabs = new javax.swing.JPanel();
+        lblTabsTitle_bottom = new javax.swing.JLabel();
+        lblTabsTitle_top = new javax.swing.JLabel();
+        pnlMain = new javax.swing.JPanel();
+        SalaryCompCard = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setAutoRequestFocus(false);
         setBackground(new java.awt.Color(209, 209, 209));
         setForeground(new java.awt.Color(209, 209, 209));
         setPreferredSize(new java.awt.Dimension(1440, 1024));
@@ -47,7 +53,33 @@ public class SalaryCompFrame extends javax.swing.JFrame {
 
         pnlTabs.setBackground(new java.awt.Color(11, 11, 69));
         pnlTabs.setPreferredSize(new java.awt.Dimension(290, 871));
+        pnlTabs.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lblTabsTitle_bottom.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        lblTabsTitle_bottom.setForeground(new java.awt.Color(255, 255, 255));
+        lblTabsTitle_bottom.setText("System");
+        pnlTabs.add(lblTabsTitle_bottom, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 90, 40));
+
+        lblTabsTitle_top.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        lblTabsTitle_top.setForeground(new java.awt.Color(255, 255, 255));
+        lblTabsTitle_top.setText("Payroll Management");
+        pnlTabs.add(lblTabsTitle_top, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 260, 40));
+
         getContentPane().add(pnlTabs, java.awt.BorderLayout.LINE_START);
+
+        pnlMain.setBackground(new java.awt.Color(209, 209, 209));
+        pnlMain.setLayout(new java.awt.CardLayout());
+
+        SalaryCompCard.setBackground(new java.awt.Color(209, 209, 209));
+
+        jPanel1.setBackground(new java.awt.Color(250, 249, 246));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+        jPanel1.setPreferredSize(new java.awt.Dimension(700, 400));
+        SalaryCompCard.add(jPanel1);
+
+        pnlMain.add(SalaryCompCard, "card2");
+
+        getContentPane().add(pnlMain, java.awt.BorderLayout.CENTER);
 
         jMenu1.setText("File");
         jMenuBar1.add(jMenu1);
@@ -97,10 +129,15 @@ public class SalaryCompFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel SalaryCompCard;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lblTabsTitle_bottom;
+    private javax.swing.JLabel lblTabsTitle_top;
     private javax.swing.JPanel pnlHeader;
+    private javax.swing.JPanel pnlMain;
     private javax.swing.JPanel pnlTabs;
     // End of variables declaration//GEN-END:variables
 }
