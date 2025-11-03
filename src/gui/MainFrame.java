@@ -63,7 +63,6 @@ public class MainFrame extends javax.swing.JFrame {
         pnlHeader.add(lblBrgyIcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 130, 150));
 
         lblHeaderTitle.setFont(new java.awt.Font("Tahoma", 1, 42)); // NOI18N
-        lblHeaderTitle.setForeground(new java.awt.Color(0, 0, 0));
         lblHeaderTitle.setText("BARANGAY SAN ROQUE, CAINTA, RIZAL");
         pnlHeader.add(lblHeaderTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 0, 890, 150));
 
@@ -75,12 +74,15 @@ public class MainFrame extends javax.swing.JFrame {
         pnllSideBar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblSystem.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
+        lblSystem.setForeground(new java.awt.Color(255, 255, 255));
         lblSystem.setText("System");
         pnllSideBar.add(lblSystem, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 250, 40));
 
         btnPayrollTab.setBackground(new java.awt.Color(11, 11, 69));
         btnPayrollTab.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnPayrollTab.setForeground(new java.awt.Color(255, 255, 255));
         btnPayrollTab.setText("Payroll");
+        btnPayrollTab.setBorderPainted(false);
         btnPayrollTab.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPayrollTabActionPerformed(evt);
@@ -96,6 +98,7 @@ public class MainFrame extends javax.swing.JFrame {
         btnAddEmployee.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnAddEmployee.setForeground(new java.awt.Color(255, 255, 255));
         btnAddEmployee.setText("Add Employee");
+        btnAddEmployee.setBorderPainted(false);
         btnAddEmployee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddEmployeeActionPerformed(evt);
@@ -107,12 +110,14 @@ public class MainFrame extends javax.swing.JFrame {
         btnDelEmployee.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnDelEmployee.setForeground(new java.awt.Color(255, 255, 255));
         btnDelEmployee.setText("Delete Employee");
+        btnDelEmployee.setBorderPainted(false);
         pnlEmployeeSubmenu.add(btnDelEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 250, 30));
 
         btnViewEmployee.setBackground(new java.awt.Color(14, 14, 86));
         btnViewEmployee.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnViewEmployee.setForeground(new java.awt.Color(255, 255, 255));
         btnViewEmployee.setText("View Employee");
+        btnViewEmployee.setBorderPainted(false);
         btnViewEmployee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnViewEmployeeActionPerformed(evt);
@@ -124,7 +129,9 @@ public class MainFrame extends javax.swing.JFrame {
 
         btnEmployeeManagement1.setBackground(new java.awt.Color(11, 11, 69));
         btnEmployeeManagement1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnEmployeeManagement1.setForeground(new java.awt.Color(255, 255, 255));
         btnEmployeeManagement1.setText("Employee Management     ▼");
+        btnEmployeeManagement1.setBorderPainted(false);
         btnEmployeeManagement1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEmployeeManagement1ActionPerformed(evt);
@@ -134,7 +141,9 @@ public class MainFrame extends javax.swing.JFrame {
 
         btnSalaryCompTab1.setBackground(new java.awt.Color(11, 11, 69));
         btnSalaryCompTab1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnSalaryCompTab1.setForeground(new java.awt.Color(255, 255, 255));
         btnSalaryCompTab1.setText("Salary Computation");
+        btnSalaryCompTab1.setBorderPainted(false);
         btnSalaryCompTab1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSalaryCompTab1ActionPerformed(evt);
@@ -144,7 +153,9 @@ public class MainFrame extends javax.swing.JFrame {
 
         btnPayslipTab.setBackground(new java.awt.Color(11, 11, 69));
         btnPayslipTab.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnPayslipTab.setForeground(new java.awt.Color(255, 255, 255));
         btnPayslipTab.setText("Payslip");
+        btnPayslipTab.setBorderPainted(false);
         btnPayslipTab.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPayslipTabActionPerformed(evt);
@@ -153,10 +164,12 @@ public class MainFrame extends javax.swing.JFrame {
         pnllSideBar.add(btnPayslipTab, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 290, -1));
 
         lblPayroll.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
+        lblPayroll.setForeground(new java.awt.Color(255, 255, 255));
         lblPayroll.setText("Payroll");
         pnllSideBar.add(lblPayroll, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 250, 40));
 
         lblManagement.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
+        lblManagement.setForeground(new java.awt.Color(255, 255, 255));
         lblManagement.setText("Management");
         pnllSideBar.add(lblManagement, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 250, 40));
 

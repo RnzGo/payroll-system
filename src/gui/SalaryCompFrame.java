@@ -42,7 +42,6 @@ public class SalaryCompFrame extends javax.swing.JFrame {
         setBackground(new java.awt.Color(209, 209, 209));
         setForeground(new java.awt.Color(209, 209, 209));
         setMinimumSize(new java.awt.Dimension(1024, 768));
-        setPreferredSize(new java.awt.Dimension(1440, 1024));
 
         pnlHeader.setBackground(new java.awt.Color(255, 251, 251));
         pnlHeader.setForeground(new java.awt.Color(255, 251, 251));
@@ -54,7 +53,6 @@ public class SalaryCompFrame extends javax.swing.JFrame {
         pnlHeader.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 130, 150));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 42)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("BARANGAY SAN ROQUE, CAINTA, RIZAL");
         pnlHeader.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 0, 890, 150));
 
@@ -65,6 +63,7 @@ public class SalaryCompFrame extends javax.swing.JFrame {
         pnllSideBar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Payroll Management System");
         pnllSideBar.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 270, 20));
 
