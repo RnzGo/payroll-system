@@ -29,20 +29,20 @@ public class MainFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         pnlHeader = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        lblBrgyIcon = new javax.swing.JLabel();
+        lblHeaderTitle = new javax.swing.JLabel();
         pnllSideBar = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        PayrollTab = new javax.swing.JButton();
+        lblSystem = new javax.swing.JLabel();
+        btnPayrollTab = new javax.swing.JButton();
         pnlEmployeeSubmenu = new javax.swing.JPanel();
         btnAddEmployee = new javax.swing.JButton();
         btnDelEmployee = new javax.swing.JButton();
         btnViewEmployee = new javax.swing.JButton();
         btnEmployeeManagement1 = new javax.swing.JButton();
-        SalaryCompTab1 = new javax.swing.JButton();
-        PayslipTab = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        btnSalaryCompTab1 = new javax.swing.JButton();
+        btnPayslipTab = new javax.swing.JButton();
+        lblPayroll = new javax.swing.JLabel();
+        lblManagement = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -52,7 +52,6 @@ public class MainFrame extends javax.swing.JFrame {
         setBackground(new java.awt.Color(209, 209, 209));
         setForeground(new java.awt.Color(209, 209, 209));
         setMinimumSize(new java.awt.Dimension(1024, 768));
-        setPreferredSize(new java.awt.Dimension(1440, 1024));
 
         pnlHeader.setBackground(new java.awt.Color(255, 251, 251));
         pnlHeader.setForeground(new java.awt.Color(255, 251, 251));
@@ -60,13 +59,13 @@ public class MainFrame extends javax.swing.JFrame {
         pnlHeader.setPreferredSize(new java.awt.Dimension(1440, 153));
         pnlHeader.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/payroll_system/554311662_1317130376082826_1071741920614451639_n 1.png"))); // NOI18N
-        pnlHeader.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 130, 150));
+        lblBrgyIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/payroll_system/554311662_1317130376082826_1071741920614451639_n 1.png"))); // NOI18N
+        pnlHeader.add(lblBrgyIcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 130, 150));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 42)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel2.setText("BARANGAY SAN ROQUE, CAINTA, RIZAL");
-        pnlHeader.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 0, 890, 150));
+        lblHeaderTitle.setFont(new java.awt.Font("Tahoma", 1, 42)); // NOI18N
+        lblHeaderTitle.setForeground(new java.awt.Color(0, 0, 0));
+        lblHeaderTitle.setText("BARANGAY SAN ROQUE, CAINTA, RIZAL");
+        pnlHeader.add(lblHeaderTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 0, 890, 150));
 
         getContentPane().add(pnlHeader, java.awt.BorderLayout.PAGE_START);
 
@@ -75,19 +74,19 @@ public class MainFrame extends javax.swing.JFrame {
         pnllSideBar.setVerifyInputWhenFocusTarget(false);
         pnllSideBar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
-        jLabel3.setText("System");
-        pnllSideBar.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 250, 40));
+        lblSystem.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
+        lblSystem.setText("System");
+        pnllSideBar.add(lblSystem, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 250, 40));
 
-        PayrollTab.setBackground(new java.awt.Color(11, 11, 69));
-        PayrollTab.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        PayrollTab.setText("Payroll");
-        PayrollTab.addActionListener(new java.awt.event.ActionListener() {
+        btnPayrollTab.setBackground(new java.awt.Color(11, 11, 69));
+        btnPayrollTab.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnPayrollTab.setText("Payroll");
+        btnPayrollTab.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                PayrollTabActionPerformed(evt);
+                btnPayrollTabActionPerformed(evt);
             }
         });
-        pnllSideBar.add(PayrollTab, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 390, 290, -1));
+        pnllSideBar.add(btnPayrollTab, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 390, 290, -1));
 
         pnlEmployeeSubmenu.setBackground(new java.awt.Color(14, 14, 86));
         pnlEmployeeSubmenu.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(14, 14, 86), 1, true));
@@ -102,13 +101,13 @@ public class MainFrame extends javax.swing.JFrame {
                 btnAddEmployeeActionPerformed(evt);
             }
         });
-        pnlEmployeeSubmenu.add(btnAddEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 250, 30));
+        pnlEmployeeSubmenu.add(btnAddEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 250, 30));
 
         btnDelEmployee.setBackground(new java.awt.Color(14, 14, 86));
         btnDelEmployee.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnDelEmployee.setForeground(new java.awt.Color(255, 255, 255));
         btnDelEmployee.setText("Delete Employee");
-        pnlEmployeeSubmenu.add(btnDelEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 250, 30));
+        pnlEmployeeSubmenu.add(btnDelEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 250, 30));
 
         btnViewEmployee.setBackground(new java.awt.Color(14, 14, 86));
         btnViewEmployee.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -119,7 +118,7 @@ public class MainFrame extends javax.swing.JFrame {
                 btnViewEmployeeActionPerformed(evt);
             }
         });
-        pnlEmployeeSubmenu.add(btnViewEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 250, 30));
+        pnlEmployeeSubmenu.add(btnViewEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 250, 30));
 
         pnllSideBar.add(pnlEmployeeSubmenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 290, -1));
 
@@ -133,33 +132,33 @@ public class MainFrame extends javax.swing.JFrame {
         });
         pnllSideBar.add(btnEmployeeManagement1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 290, -1));
 
-        SalaryCompTab1.setBackground(new java.awt.Color(11, 11, 69));
-        SalaryCompTab1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        SalaryCompTab1.setText("Salary Computation");
-        SalaryCompTab1.addActionListener(new java.awt.event.ActionListener() {
+        btnSalaryCompTab1.setBackground(new java.awt.Color(11, 11, 69));
+        btnSalaryCompTab1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnSalaryCompTab1.setText("Salary Computation");
+        btnSalaryCompTab1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SalaryCompTab1ActionPerformed(evt);
+                btnSalaryCompTab1ActionPerformed(evt);
             }
         });
-        pnllSideBar.add(SalaryCompTab1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 310, 290, -1));
+        pnllSideBar.add(btnSalaryCompTab1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 310, 290, -1));
 
-        PayslipTab.setBackground(new java.awt.Color(11, 11, 69));
-        PayslipTab.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        PayslipTab.setText("Payslip");
-        PayslipTab.addActionListener(new java.awt.event.ActionListener() {
+        btnPayslipTab.setBackground(new java.awt.Color(11, 11, 69));
+        btnPayslipTab.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnPayslipTab.setText("Payslip");
+        btnPayslipTab.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                PayslipTabActionPerformed(evt);
+                btnPayslipTabActionPerformed(evt);
             }
         });
-        pnllSideBar.add(PayslipTab, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 290, -1));
+        pnllSideBar.add(btnPayslipTab, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 290, -1));
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
-        jLabel4.setText("Payroll");
-        pnllSideBar.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 250, 40));
+        lblPayroll.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
+        lblPayroll.setText("Payroll");
+        pnllSideBar.add(lblPayroll, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 250, 40));
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
-        jLabel5.setText("Management");
-        pnllSideBar.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 250, 40));
+        lblManagement.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
+        lblManagement.setText("Management");
+        pnllSideBar.add(lblManagement, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 250, 40));
 
         getContentPane().add(pnllSideBar, java.awt.BorderLayout.LINE_START);
 
@@ -175,9 +174,9 @@ public class MainFrame extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void PayrollTabActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PayrollTabActionPerformed
+    private void btnPayrollTabActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPayrollTabActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_PayrollTabActionPerformed
+    }//GEN-LAST:event_btnPayrollTabActionPerformed
 
     private void btnAddEmployeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddEmployeeActionPerformed
         // TODO add your handling code here:
@@ -187,13 +186,13 @@ public class MainFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnEmployeeManagement1ActionPerformed
 
-    private void SalaryCompTab1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalaryCompTab1ActionPerformed
+    private void btnSalaryCompTab1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalaryCompTab1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_SalaryCompTab1ActionPerformed
+    }//GEN-LAST:event_btnSalaryCompTab1ActionPerformed
 
-    private void PayslipTabActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PayslipTabActionPerformed
+    private void btnPayslipTabActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPayslipTabActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_PayslipTabActionPerformed
+    }//GEN-LAST:event_btnPayslipTabActionPerformed
 
     private void btnViewEmployeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewEmployeeActionPerformed
         // TODO add your handling code here:
@@ -236,21 +235,21 @@ public class MainFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton PayrollTab;
-    private javax.swing.JButton PayslipTab;
-    private javax.swing.JButton SalaryCompTab1;
     private javax.swing.JButton btnAddEmployee;
     private javax.swing.JButton btnDelEmployee;
     private javax.swing.JButton btnEmployeeManagement1;
+    private javax.swing.JButton btnPayrollTab;
+    private javax.swing.JButton btnPayslipTab;
+    private javax.swing.JButton btnSalaryCompTab1;
     private javax.swing.JButton btnViewEmployee;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JLabel lblBrgyIcon;
+    private javax.swing.JLabel lblHeaderTitle;
+    private javax.swing.JLabel lblManagement;
+    private javax.swing.JLabel lblPayroll;
+    private javax.swing.JLabel lblSystem;
     private javax.swing.JPanel pnlEmployeeSubmenu;
     private javax.swing.JPanel pnlHeader;
     private javax.swing.JPanel pnllSideBar;
