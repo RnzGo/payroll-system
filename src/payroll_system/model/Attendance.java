@@ -69,3 +69,4 @@ public class Attendance {
                 ", Days Worked = " + daysWorked + ", Period Start = " + periodStart + ", Period End = " + periodEnd;
     }
 }
+
